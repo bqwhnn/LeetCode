@@ -14,3 +14,15 @@ func twoSum(nums []int, target int) []int {
     }
     return []int{}
 }
+
+func twoSum_1(nums []int, target int) []int {
+    m := make(map[int]int)
+    for k, v := range nums {
+        t := target - v
+        if i, ok := m[t]; ok {
+            return []int{i, k}
+        }
+        m[v] = k
+    }
+    return []int{}
+}
