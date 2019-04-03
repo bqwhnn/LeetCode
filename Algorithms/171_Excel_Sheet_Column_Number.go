@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func test171() {
 	s := "ACG"
 	fmt.Println(titleToNumber(s))
 }

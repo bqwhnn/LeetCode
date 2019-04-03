@@ -6,7 +6,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func main() {
+func test237() {
 
 }
 

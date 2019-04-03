@@ -2,7 +2,7 @@ package main
 
 import "sort"
 
-func main() {
+func test997() {
 
 }
 
@@ -15,7 +15,7 @@ func sortedSquares(A []int) []int {
     return r
 }
 
-func sortedSquares_2(A []int) []int {
+func sortedSquares2(A []int) []int {
     r := []int{}
     t := []int{}
     a := -1
@@ -42,7 +42,7 @@ func sortedSquares_2(A []int) []int {
     return r
 }
 
-func sortedSquares_3(A []int) []int {
+func sortedSquares3(A []int) []int {
     r := make([]int, len(A))
     head := 0
     tail := len(A)-1
