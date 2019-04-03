@@ -1,11 +1,5 @@
 package main
 
-// ListNode struct
-type ListNode struct {
-	Val int
-	Next *ListNode
-}
-
 func test237() {
 
 }
