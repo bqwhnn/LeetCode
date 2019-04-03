@@ -18,8 +18,8 @@ func test021() {
     if l2 == nil {
         return l1
     }
-    var l3 *ListNode = new(ListNode)
-    var l4 *ListNode = l3
+    l3 := new(ListNode)
+    l4 := l3
     for l1 != nil && l2 != nil {
         if l1.Val < l2.Val {
             l4.Val = l1.Val
