@@ -13,7 +13,7 @@ func test657() {
 func judgeCircle(moves string) bool {
 	m := make(map[rune]int)
 	for _, move := range moves {
-		m[move] += 1
+		m[move]++
 	}
 	return m['R'] == m['L'] && m['U'] == m['D']
 }
