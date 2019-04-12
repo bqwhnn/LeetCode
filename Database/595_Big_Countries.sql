@@ -15,7 +15,7 @@
 
 -- 例如，根据上表，我们应该输出:
 
--- sql table
+-- sql 架构
 Create table If Not Exists World (name varchar(255), continent varchar(255), area int, population int, gdp int)
 Truncate table World
 insert into World (name, continent, area, population, gdp) values ('Afghanistan', 'Asia', '652230', '25500100', '20343000000')
@@ -24,7 +24,17 @@ insert into World (name, continent, area, population, gdp) values ('Algeria', 'A
 insert into World (name, continent, area, population, gdp) values ('Andorra', 'Europe', '468', '78115', '3712000000')
 insert into World (name, continent, area, population, gdp) values ('Angola', 'Africa', '1246700', '20609294', '100990000000')
 
+-- mysql 优化，UNION 效率可能比 OR 快
 -- answer:
 SELECT name, population, area
 FROM World
-WHERE area > 3000000 or population > 25000000
+WHERE area > 3000000 or population > 25000000;
+
+-- answer2:
+SELECT name, population, area
+FROM World
+WHERE area > 3000000
+UNION
+SELECT name, population. area
+FROM World
+WHERE population > 25000000;
