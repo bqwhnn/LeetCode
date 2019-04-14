@@ -25,7 +25,7 @@
 -- +---------+-----------+--------------+-----------+
 
 -- sql 架构
-Create table If Not Exists cinema (id int, movie varchar(255), description varchar(255), rating float(2, 1))
+Create table cinema (id int, movie varchar(255), description varchar(255), rating float(2, 1))
 Truncate table cinema
 insert into cinema (id, movie, description, rating) values ('1', 'War', 'great 3D', '8.9')
 insert into cinema (id, movie, description, rating) values ('2', 'Science', 'fiction', '8.5')
@@ -33,9 +33,9 @@ insert into cinema (id, movie, description, rating) values ('3', 'irish', 'borin
 insert into cinema (id, movie, description, rating) values ('4', 'Ice song', 'Fantacy', '8.6')
 insert into cinema (id, movie, description, rating) values ('5', 'House card', 'Interesting', '9.1')
 
--- answer
 -- ANSI 标准中是用 <> 来表示不等于的，虽然 != 有相同的意思，
 -- 但是前者的可移植性优与后者，所以在 sql 语句中尽量使用 <> 来做不等判断。
+-- answer
 SELECT *
 FROM cinema
 WHERE id % 2 <> 0 AND description <> 'boring'

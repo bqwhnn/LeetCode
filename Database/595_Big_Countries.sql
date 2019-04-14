@@ -16,7 +16,7 @@
 -- 例如，根据上表，我们应该输出:
 
 -- sql 架构
-Create table If Not Exists World (name varchar(255), continent varchar(255), area int, population int, gdp int)
+Create table World (name varchar(255), continent varchar(255), area int, population int, gdp int)
 Truncate table World
 insert into World (name, continent, area, population, gdp) values ('Afghanistan', 'Asia', '652230', '25500100', '20343000000')
 insert into World (name, continent, area, population, gdp) values ('Albania', 'Europe', '28748', '2831741', '12960000000')

@@ -19,7 +19,7 @@
 -- 说明：所有电子邮箱都是小写字母。
 
 -- sql 架构
-Create table If Not Exists Person (Id int, Email varchar(255))
+Create table Person (Id int, Email varchar(255))
 Truncate table Person
 insert into Person (Id, Email) values ('1', 'a@b.com')
 insert into Person (Id, Email) values ('2', 'c@d.com')
