@@ -35,6 +35,7 @@ insert into cinema (id, movie, description, rating) values ('5', 'House card', '
 
 -- ANSI 标准中是用 <> 来表示不等于的，虽然 != 有相同的意思，
 -- 但是前者的可移植性优与后者，所以在 sql 语句中尽量使用 <> 来做不等判断。
+-- ORDER BY 有两种排序方式，默认 ASC 升序，可选 DESC 降序。
 -- answer
 SELECT *
 FROM cinema
