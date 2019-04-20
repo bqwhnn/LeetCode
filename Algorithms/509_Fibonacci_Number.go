@@ -4,6 +4,8 @@
 // F(N) = F(N - 1) + F(N - 2), 其中 N > 1.
 // 给定 N，计算 F(N)。
 
+package main
+
 func test509() {
 
 }
